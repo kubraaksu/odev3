@@ -78,4 +78,4 @@ t_1=time.time()
 #print(numberOfCor)
 
 print(" quick sort"    ,"time:",t_end-t_start)
-print(" elemanli buble sort"    ,"time:",t_1-t_end)
+print(" buble sort"    ,"time:",t_1-t_end)
