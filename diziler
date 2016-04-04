@@ -1,0 +1,20 @@
+import sys
+myArray=[]
+t1=0
+t2=0
+t1=sys.getsizeof(myArray)
+for i in range(0,10):
+	print("i değeri:",i,"size:",sys.getsizeof(myArray))
+	myArray.append(i)
+	t2=sys.getsizeof(myArray)
+	if(t1!=t2):
+		print("*********************")
+		print("resize oldu")
+		print("t1 değeri:",t1)
+		print("t2 değeri:",t2)
+		print("t1 t2 farkı:",t2-t1)
+		print("t1 t2 oranı:",t2/t1)
+		t1=t2
+		
+print(len(myArray))
+print(sys.getsizeof(myArray))
